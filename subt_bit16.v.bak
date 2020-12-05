@@ -1,0 +1,12 @@
+module subt_bit16 (
+	input aIn, bIn,
+	input crIn,
+	output diffOut,
+	output brw
+); 
+
+assign diffOut = aIn ^ bIn ^ crIn;
+assign brw = ((~aIn)&bIn | ((~aIn)&crIn) | (bIn&crIn));
+endmodule
+
+ 

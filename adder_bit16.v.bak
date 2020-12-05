@@ -1,0 +1,11 @@
+module halfadder (
+	input aIn,
+	input bIn,
+	output sumOut,
+	output crOut
+);
+
+assign crOut = aIn & bIn;
+assign sumOut = aIn ^ bIn;
+endmodule
+
